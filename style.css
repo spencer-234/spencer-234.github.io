@@ -13,8 +13,6 @@ html, body {
     --text-color: white;
     --card-color-one: rgb(22, 22, 22);
     --card-color-two: rgb(32, 32, 32);
-    --section-color-one: rgb(32, 32, 32);
-    --section-color-two: rgb(22, 22, 22);
     --box-shadow-one: rgba(8,8,8,1);
     --box-shadow-two: rgba(28,28,28,1);
 }
@@ -24,10 +22,8 @@ html, body {
     --text-color: black;
     --card-color-one: rgb(221, 221, 221);
     --card-color-two: rgb(236, 236, 236);
-    --section-color-one: rgb(236, 236, 236);
-    --section-color-two: rgb(221, 221, 221);
     --box-shadow-one: rgba(214,214,214,1);
-    --box-shadow-two: rgba(214,214,214,1);
+    --box-shadow-two: rgba(255,255,255,1);
 }
 
 .navbar {

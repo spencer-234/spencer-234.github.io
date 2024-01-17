@@ -20,3 +20,8 @@ function dark() {
     moon.style.display = "none";
     sun.style.display = "block";
 }
+
+// function to open github repos
+function openRepos() {
+    window.open("https://github.com/spencer-234?tab=repositories");
+}
