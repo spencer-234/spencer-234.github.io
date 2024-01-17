@@ -3,44 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spencer Evans Dev</title>
-    <link rel="icon" type="image/svg+xml" href="./assets/github.svg" />
+    <title>Spencer Evans Web Dev</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/7acbc63d23.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="navbar">
+         <div class="logo">
+             <img src="./assets/bitmoji_icons/smile.png" alt="logo image" class="logoImage">
+             <h1><a href="#">Spencer Evans Web Dev</a></h1>
+             <i class="fa-regular fa-sun" id="sun" onclick="light()"></i>
+             <i class="fa-regular fa-moon" id="moon" onclick="dark()"></i>
+         </div>
+         <ul class="sectionList">
+             <li>
+                 <a href="#about" class="navLink">About</a>
+             </li>
+             <li>
+                 <a href="#projects" class="navLink">Projects</a>
+             </li>
+             <li>
+                 <a href="#contact" class="navLink">Contact</a>
+             </li>
+         </ul>
+    </nav>
     <div class="container">
-        <h1>Spencer Evans</h1>
-        <h2>Web Developer</h2>
-        <div class="buttons">
-            <button class="btn aboutBtn">About</button>
-            <button class="btn projectsBtn">Projects</button>
-            <button class="btn">Contact Me</button>
-        </div>
-        <div class="icons">
-            <img src="./assets/icons/html.png" alt="HTML icon" class="iconImg">
-            <img src="./assets/icons/css.png" alt="CSS icon" class="iconImg">
-            <img src="./assets/icons/js.webp" alt="Javascript icon" class="iconImg">
-            <img src="./assets/icons/react.png" alt="React icon" class="iconImg">
-            <img src="./assets/icons/node.png" alt="Node icon" class="iconImg">
-            <img src="./assets/icons/sql.png" alt="SQL icon" class="sql">
-        </div>
-        <div class="about">
-                <div class="aboutHeader">
-                    <h2>About</h2>
-                    <span class="closeBtn">X</span>
+       <section id="welcome">
+            <div class="card one">
+                <img src="./assets/bitmoji_icons/laptop.png" alt="welcome image" class="bitmojiImg">
+                <div class="textCard">
+                    <h2>Welcome to my portfolio!</h2>
+                    <p>
+                        My name is Spencer Evans and I'm a web developer. I have developed the skills and knowledge
+                        needed to build client-side applications as well as server-side programming. I'm excited
+                        to work with you in the future!
+                    </p>
                 </div>
-                <img src="./assets/aboutIng.jpg" alt="About Image">
-                <p>
-                    After working on optic fiber cables, I decided to research getting into software development. After learning
-                    technologies such as HTML, CSS, Javascript, Node.js, SQL, REACT, Express.js and more, I'm confident I can build
-                    you a website to stand out amongst others.
-                </p>
-        </div>
+            </div>
+       </section>
+       <section id="about">
+            <div class="card two">
+                <div class="imgContainer">
+                    <div class="icons">
+                        <img src="./assets/icons/html.png" alt="HTML icon" class="icon">
+                        <img src="./assets/icons/css.png" alt="CSS icon" class="icon">
+                        <img src="./assets/icons/js.webp" alt="Javascript icon" class="icon">
+                        <img src="./assets/icons/react.png" alt="React icon"class="icon">
+                        <img src="./assets/icons/node.png" alt="Node icon" class="icon">
+                        <img src="./assets/icons/sql.png" alt="SQL icon" class="icon">
+                    </div>
+                    <img src="./assets/bitmoji_icons/sticker.png" alt="about image" class="bitmojiImg">
+                </div>
+                <div class="textCard">
+                    <h2>About Me</h2>
+                    <p>
+                        Web development has always been a passion to me. I used to work on fiber optic cables to provide wifi
+                        to areas all over Richmond. I wanted to learn how to use that service to develop websites and decided
+                        to learn how to code. Now I make use of HTML, CSS, Javascript, React, Node.js and more to develop the 
+                        website you need.
+                    </p>
+                </div>
+            </div>
+       </section>
+       <section id="projects">
+            <div class="card one">
+                <img src="./assets/bitmoji_icons/working.png" alt="projects image" class="bitmojiImg">
+                <div class="textCard">
+                    <h2>Projects</h2>
+                    <span>Check out my github repos that contain all of my projects!</span>
+                    <img src="./assets/githubss.png" alt="github profile image" class="githubImg">
+                </div>
+            </div>
+       </section>
+       <section id="contact">
+            <div class="card two">
+                <img src="./assets/bitmoji_icons/ramen.png" alt="contact image" class="bitmojiImg">
+                <div class="textCard">
+                    <h2>Contact Me</h2>
+                    <span>Email: spencerevans234@gmail.com</span>
+                </div>
+            </div>
+       </section>
     </div>
-
     <script src="./script.js"></script>
 </body>
 </html>

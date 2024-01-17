@@ -1,20 +1,22 @@
-// Set variables for elements
-const aboutDialog = document.querySelector(".about");
-const closebtn = document.querySelector(".closeBtn");
-const projectsBtn = document.querySelector(".projectsBtn");
+// Get variables to change dark and light mode
+const root = document.documentElement;
+const sun = document.getElementById("sun");
+const moon = document.getElementById("moon");
 
-// function to open the about tab
-document.querySelector(".aboutBtn").addEventListener("click", () => {
-    aboutDialog.style.display = "flex";
-})
+// start on dark mode
+root.classList.add("dark");
 
-// function to close the about tab
-closebtn.addEventListener("click", () => {
-    aboutDialog.style.display = "none";
-})
+// functions to change mode on button click'
+function light() {
+    root.classList.remove("dark");
+    root.classList.add("light");
+    sun.style.display = "none";
+    moon.style.display = "block";
+}
 
-// function to open github repos
-projectsBtn.addEventListener("click", () => {
-    window.open("https://github.com/spencer-234?tab=repositories");
-})
-
+function dark() {
+    root.classList.remove("light");
+    root.classList.add("dark");
+    moon.style.display = "none";
+    sun.style.display = "block";
+}
